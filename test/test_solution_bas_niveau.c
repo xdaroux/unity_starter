@@ -45,6 +45,3 @@ void test_strcpy(void){
     TEST_ASSERT_EQUAL_STRING("abcdeabcde", strcpy(s, "abcdeabcde"));
 
 }
-
-void test
-
