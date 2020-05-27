@@ -7,6 +7,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
+#include "../src/solution_c_bas_niveau.h"
 
 size_t strlen(const char* cs);
 int puts(const char* cs);
