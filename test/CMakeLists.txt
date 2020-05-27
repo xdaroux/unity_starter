@@ -1,4 +1,4 @@
-file(GLOB SOURCES ./*.c ../src/decoder.c)
+file(GLOB SOURCES ./*.c ../src/*.c)
 
 add_subdirectory(unity)
 add_executable(test ${SOURCES})

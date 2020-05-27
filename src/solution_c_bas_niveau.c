@@ -23,12 +23,14 @@ le caractère nul, '\0' (code ASCII 0x00)
 */
 
 /* affiche une chaine sur la console, passe la dernière valeur de retour de putchar */
-int puts(const char* cs);
 
 
 /* retourne la longueur d'une chaine, sans compter le '\0' final
 	size_t est defini dans stddef.h, c'est un entier non signé.
  */
+#include "solution_c_bas_niveau.h"
+#include <stddef.h>
+
 size_t strlen(const char* cs)
 {
     size_t i = 0;
@@ -68,7 +70,7 @@ char* strreverse(char *s)
 
 /* convertie un entier non signé en chaine de caractère.
    s est un tampon existant pouvant recevoir la chaîne (il faut au max 13 cases) */
-char* longtodec(unsigned int l, char* s);
+char* longtodec(unsigned int l, char* s)
 {
     unsigned char i = 0;
     while(l > 0) {
